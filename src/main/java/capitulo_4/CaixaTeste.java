@@ -1,6 +1,6 @@
 package capitulo_4;
 
-public class TestaCaixa {
+public class CaixaTeste {
     public static void main(String[] args) {
         Caixa c = new Caixa();
         c.comprimento = 10.0;

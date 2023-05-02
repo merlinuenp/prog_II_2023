@@ -1,19 +1,19 @@
 package capitulo_4;
 
-
 public class Pessoa {
+
     Integer idade;
     String nome;
-    
+
     // sobrecarga 
-    Pessoa(){
+    Pessoa() {
         idade = 0;
-        nome = ""; 
+        nome = "";
     }
-       
-    Pessoa(Integer idade, String nome){
+
+    Pessoa(Integer idade, String nome) {
         this.idade = idade;
-        this.nome = nome; 
+        this.nome = nome;
     }
-    
+
 }
