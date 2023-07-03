@@ -3,10 +3,12 @@ package capitulo_4;
 
 
 public class Carro {
-    String marca;
-    String modelo;
-    Integer ano;
-    Integer velocidade; 
+
+ 
+    public String marca;
+    private String modelo;
+    private Integer ano;
+    private Integer velocidade; 
 
     public Carro() {    }
    
@@ -18,15 +20,61 @@ public class Carro {
     }
     
     void acelerar(){
-        if (velocidade < 200){
-            velocidade++; 
+        if (getVelocidade() < 200){
+            setVelocidade((Integer) (getVelocidade() + 1)); 
         }
     }
     
     void frear(){
-        if (velocidade > 0){
-            velocidade--; 
+        if (getVelocidade() > 0){
+            setVelocidade((Integer) (getVelocidade() - 1)); 
         }
     }
+    
+       public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    
+    public String getModelo() {
+        return modelo;
+    }
+
+    /**
+     * @param modelo the modelo to set
+     */
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    /**
+     * @return the ano
+     */
+    public Integer getAno() {
+        return ano;
+    }
+
+    /**
+     * @param ano the ano to set
+     */
+    public void setAno(Integer ano) {
+        this.ano = ano;
+    }
+
+   
+    public Integer getVelocidade() {
+        return velocidade;
+    }
+
+   
+    public void setVelocidade(Integer velocidade) {
+        this.velocidade = velocidade;
+    }
+    
+    
     
 }

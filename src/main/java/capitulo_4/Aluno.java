@@ -3,17 +3,17 @@ package capitulo_4;
 import java.time.LocalDate;
 
 
-class Aluno {
+public class Aluno {
     Integer matricula; 
     String nome;
 
 
-    Aluno(){
+    public Aluno(){
         matricula = 0;
         nome = "";
     }
     
-    Aluno(Integer matricula, String nome){
+    public Aluno(Integer matricula, String nome){
         this.matricula = matricula;
         this.nome = nome; 
     }
